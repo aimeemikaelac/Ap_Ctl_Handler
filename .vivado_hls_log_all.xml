@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'ap_ctl_handler/ap_status_out_V' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="Ap_Ctl_Handler" solutionName="solution1" date="2015-01-24T11:46:44.891-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'ap_ctl_handler/ap_start_enable' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="Ap_Ctl_Handler" solutionName="solution1" date="2015-01-24T11:46:44.887-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'ap_start_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Ap_Ctl_Handler" solutionName="solution1" date="2015-01-24T11:46:44.880-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

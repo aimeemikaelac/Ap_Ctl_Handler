@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sat Jan 24 10:02:43 2015
+# Process ID: 13044
+# Log file: D:/xilinx_workspace/Ap_Ctl_Handler/solution1/impl/ip/vivado.log
+# Journal file: D:/xilinx_workspace/Ap_Ctl_Handler/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

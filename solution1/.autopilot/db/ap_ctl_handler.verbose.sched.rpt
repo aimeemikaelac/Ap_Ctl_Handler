@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vivado HLS Report for 'ap_ctl_handler'
+================================================================
+* Date:           Sat Jan 24 11:46:44 2015
+
+* Version:        2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)
+* Project:        Ap_Ctl_Handler
+* Solution:       solution1
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      5.73|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 5.73ns
+ST_1: stg_2 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i1 %ap_start_enable), !map !7
+
+ST_1: stg_3 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %ap_start_out), !map !13
+
+ST_1: stg_4 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1 %ap_ready_in), !map !17
+
+ST_1: stg_5 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i1 %ap_done_in), !map !21
+
+ST_1: stg_6 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1 %ap_idle_in), !map !25
+
+ST_1: stg_7 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i3* %ap_status_out_V), !map !29
+
+ST_1: stg_8 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @str) nounwind
+
+ST_1: ap_idle_in_read [1/1] 0.00ns
+:7  %ap_idle_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %ap_idle_in)
+
+ST_1: ap_done_in_read [1/1] 0.00ns
+:8  %ap_done_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %ap_done_in)
+
+ST_1: ap_ready_in_read [1/1] 0.00ns
+:9  %ap_ready_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %ap_ready_in)
+
+ST_1: stg_12 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecIFCore(i3* %ap_status_out_V, [1 x i8]* @p_str, [10 x i8]* @p_str1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_13 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecWire(i1 %ap_done_in, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_14 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecIFCore(i1 %ap_start_enable, [1 x i8]* @p_str, [10 x i8]* @p_str1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_15 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecWire(i3* %ap_status_out_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_16 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecWire(i1 %ap_idle_in, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_17 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecWire(i1 %ap_ready_in, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_18 [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecWire(i1* %ap_start_out, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_19 [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecWire(i1 %ap_start_enable, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: p_s [1/1] 1.37ns
+:18  %p_s = select i1 %ap_ready_in_read, i3 -4, i3 0
+
+ST_1: current_status_V [1/1] 1.37ns
+:19  %current_status_V = select i1 %ap_ready_in_read, i3 -2, i3 2
+
+ST_1: current_status_V_1 [1/1] 1.37ns
+:20  %current_status_V_1 = select i1 %ap_done_in_read, i3 %current_status_V, i3 %p_s
+
+ST_1: tmp_1 [1/1] 0.00ns
+:21  %tmp_1 = call i2 @_ssdm_op_PartSelect.i2.i3.i32.i32(i3 %current_status_V_1, i32 1, i32 2)
+
+ST_1: current_status_V_2 [1/1] 0.00ns
+:22  %current_status_V_2 = call i3 @_ssdm_op_BitConcatenate.i3.i2.i1(i2 %tmp_1, i1 true)
+
+ST_1: p_04_1 [1/1] 1.37ns
+:23  %p_04_1 = select i1 %ap_idle_in_read, i3 %current_status_V_2, i3 %current_status_V_1
+
+ST_1: tmp [1/1] 1.62ns
+:24  %tmp = icmp ne i3 %p_04_1, 0
+
+ST_1: stg_27 [1/1] 0.00ns
+:25  call void @_ssdm_op_Write.ap_none.i1P(i1* %ap_start_out, i1 %tmp)
+
+ST_1: stg_28 [1/1] 0.00ns
+:26  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

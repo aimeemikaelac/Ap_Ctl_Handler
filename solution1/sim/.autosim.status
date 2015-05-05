@@ -1,0 +1,10 @@
+set status(tv_done) 0
+set status(tvin) "ap_ctl_handler.autotvin.dat"
+set status(wrapc_done) 1
+set status(bc_done) 0
+set status(bc_tb_done) 0
+set status(tvout) "ap_ctl_handler.autotvout.dat"
+set status(sc_done) 1
+set status(cas_done) 0
+set status(hdl_tvin) "ap_ctl_handler.hdltvin.dat"
+set status(hdl_tvout) "ap_ctl_handler.hdltvout.dat"

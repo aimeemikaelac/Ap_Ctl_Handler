@@ -1,0 +1,5 @@
+   Build using "/home/michael/Xilinx/Vivado_HLS/2014.1/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_ap_ctl_handler.cpp
+   Compiling ap_ctl_handler_testbench.cpp_pre.cpp.tb.cpp
+   Compiling ap_ctl_handler.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
